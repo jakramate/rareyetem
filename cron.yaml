@@ -1,0 +1,7 @@
+cron:
+  - description: "fetching new articles"
+    url: /tasks/update
+    schedule: every 3 hours
+  - description: "cleaning up staled articles"
+    url: /tasks/cleanup
+    schedule: every 24 hours 

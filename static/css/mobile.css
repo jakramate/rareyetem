@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #444;
+  background-color: rgb(235,235,235);
+}
+/*
+ * Formatting the header area
+ */
+header {
+  background-color: rgb(50,50,50);
+  height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+h1 {
+  padding-top: 10px;
+  font-size: 1.7em;
+  color: white;
+}
+/*
+ * Centering the body content
+ */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.news {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.credit {
+  color: white;
+  font-size: 0.8em;
+  position: absolute;
+  top: 0px;
+  right: -2px;
+  background-color: rgb(50,50,50);
+  opacity: 0.8;
+}
+.img-container {
+  position: relative;
+  display: block;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  bottom: 2px;
+  background-color: rgb(50,50,50);
+  color: white;
+  border: 2px solid rgb(50,50,50);
+  font-size: 1.5em;
+  opacity: 0.8;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+  border: 2px solid rgb(50,50,50);
+}
+
+a:link { 
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: magenta;
+}
+
+a:visited {
+    text-decoration: none;
+    color: brown;
+}
+

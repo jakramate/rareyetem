@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rareyetem</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mitr">
+    <script data-ad-client="ca-pub-7866191942595358" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {    
+        window.location.replace('/mobile');  // redirect to mobile template
+    }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>.rareyetem</h1>
+      </div>
+    </header>
+    <div class="container">
+        <table>
+        {% for item_row in items | batch(3, '&nbsp;') %}
+        <tr>
+            {% for item in item_row %}
+            <td>
+            <div class="news">
+                <a href="{{ item['link'] }}">
+                 <div class="img-container">
+                   <img src="{{ item['img'] }}" />
+                   <div class="text-block">{{ item['title'] }}</div>
+                   <div class="credit">{{ item['credit'].split('.')[1] }}</div>
+                 </div>
+                </a>
+            </div>
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        </table>
+    </div>
+    <footer>
+        <div class="containner">
+        - brought to you by the rareyetem engine -
+        </div>
+    </footer>
+  </body>
+</html>
